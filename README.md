@@ -3,7 +3,7 @@
 #### The purpose of this project is to build an application which can write, save, and delete notes using an express backend to save and retrieve note data from a JSON file. 
 
 
-###User Story
+### User Story
 
 AS A small business owner
 
