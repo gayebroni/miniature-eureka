@@ -1,6 +1,9 @@
 # Note Taker Starter Code
 
-#### The purpose of this project is to build an application which can write, save, and delete notes using an express backend to save and retrieve note data from a JSON file. The project "User Story" is below.
+#### The purpose of this project is to build an application which can write, save, and delete notes using an express backend to save and retrieve note data from a JSON file. 
+
+
+###User Story
 
 AS A small business owner
 
