@@ -1,8 +1,10 @@
 # Note Taker Starter Code
+(The purpose of this project is to build an application which can write, save, and delete notes using an express backend to save and retrieve note data from a JSON file. The project user story is below.)
 
-### AS A small business owner
-### I WANT to be able to write and save notes
-### SO THAT I can organize my thoughts and keep track of tasks I need to complete
+
+(p) AS A small business owner
+(p) I WANT to be able to write and save notes
+(p) SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 
 ### GIVEN a note-taking application
