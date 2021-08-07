@@ -11,7 +11,7 @@ noteapp.get("/home", (req, res)=> {
     res.send("HI!");
 });
 
-
+// use path module to obtain data from html - use join (joins specified paths into one) or resolve (resolves specified paths into an absolute path (root directory))
 noteapp.get("/notes", (req,res)=> {
     res.sendFile(path.resolve() + "/public/notes.html");
 });
