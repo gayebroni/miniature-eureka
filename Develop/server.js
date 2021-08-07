@@ -5,6 +5,7 @@ const express = require("express")
 
 // This creates an express server
 const noteapp = express();
+noteapp.use(express.static("public"));
 
 
 noteapp.get("/home", (req, res)=> {
@@ -15,6 +16,7 @@ noteapp.get("/home", (req, res)=> {
 noteapp.get("/notes", (req,res)=> {
     res.sendFile(path.resolve() + "/public/notes.html");
 });
+
 noteapp.get("/", (req,res)=> {
     res.sendFile(path.resolve() + "/public/index.html");
 });
@@ -22,7 +24,8 @@ noteapp.get("/", (req,res)=> {
 noteapp.get("/api/notes", (req,res)=> 
 {
     const data = fs.readFileSync(path.resolve() + "/db/db.json", "utf8");
-    res.json(data);
+    const jsonNotes = JSON.parse(data);
+    res.json(jsonNotes);
 });
 
 noteapp.post("/api/notes", (req, res) => {
@@ -30,9 +33,6 @@ noteapp.post("/api/notes", (req, res) => {
     console.log(data);
     res.json(req.data);
 });
-
-
-
 
 noteapp.listen(3002, () => {
     console.log("API server now on port!");
