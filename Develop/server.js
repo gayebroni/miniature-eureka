@@ -25,7 +25,12 @@ noteapp.get("/api/notes", (req,res)=>
     res.json(data);
 });
 
-noteapp.post("/api/notes", (req, res) => {});
+noteapp.post("/api/notes", (req, res) => {
+    // req.body is where our incoming content will be
+    console.log(data);
+    res.json(req.data);
+});
+
 
 
 
